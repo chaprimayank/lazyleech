@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup as bs
 from motor.motor_asyncio import AsyncIOMotorClient
 from motor.core import AgnosticClient, AgnosticDatabase, AgnosticCollection
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
-from .. import app, ADMIN_CHATS, ForceDocumentFlag
+from .. import app, ADMIN_CHATS
 from .leech import initiate_torrent
 
 rsslink = list(filter(lambda x: x, map(str, os.environ.get("NYAA_RSS_LINKS", "https://nyaa.si/?page=rss&c=0_0&f=0&u=AkihitoSubsWeeklies").split(' '))))
